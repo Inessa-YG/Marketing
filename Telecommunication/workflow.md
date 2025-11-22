@@ -1,4 +1,5 @@
-
+```mermaid
+flowchart TD
     Start([Customer Request]) --> A[Job Classification<br/>SiteID, SiteName, JobDueDate<br/>ProgrammeName, Workstream]
     
     A --> B[Material Planning<br/>ProductCode, ProductDescription<br/>UnitofMeasure, Quantity<br/>LowCheck, HighCheck]
@@ -31,3 +32,21 @@
     N -.->|Need More Materials| D
     
     N --> O([Job Complete])
+
+    style A fill:#e9d5ff
+    style B fill:#bbf7d0
+    style C fill:#fed7aa
+    style D fill:#bfdbfe
+    style E fill:#fef08a
+    style F fill:#bbf7d0
+    style G fill:#fef08a
+    style H fill:#86efac
+    style I fill:#fef08a
+    style J fill:#fef08a
+    style K fill:#fecaca
+    style L fill:#e0e7ff
+    style M fill:#fed7aa
+    style N fill:#86efac
+    style Start fill:#dbeafe
+    style O fill:#86efac
+```
