@@ -51,3 +51,64 @@ graph TB
     class Step7,Step8 installStyle
     class Exception,Reports exceptionStyle
     class Decision1,Decision3 decisionStyle
+
+flowchart LR
+    A[Customer<br/>Request] --> B[Job<br/>Classification]
+    B --> C[Material<br/>Planning]
+    C --> D[Sales<br/>Order]
+    D --> E[Material<br/>Issue]
+    E --> F[Quality<br/>Check]
+    F --> G[Field<br/>Install]
+    G --> H[Complete]
+    
+    style A fill:#dbeafe
+    style B fill:#e9d5ff
+    style C fill:#bbf7d0
+    style D fill:#bfdbfe
+    style E fill:#86efac
+    style F fill:#fef08a
+    style G fill:#fed7aa
+    style H fill:#86efac
+
+sequenceDiagram
+    autonumber
+    participant Customer
+    participant System
+    participant Planning
+    participant Inventory
+    participant Technician
+    participant Site
+
+    Customer->>System: Request Installation
+    System->>System: Create SiteID, JobDueDate
+    System->>Planning: Assign ProgrammeName & Workstream
+    Planning->>Planning: Calculate Materials
+    Planning->>Inventory: Create Sales Order (SO####)
+    
+    alt Van Stock
+        Inventory->>Technician: Issue from Van
+    else Warehouse
+        Inventory->>Inventory: Pick from Warehouse
+        Inventory->>Technician: Fulfill
+    end
+    
+    Inventory->>Inventory: Create Shipment (SS####)
+    Inventory->>Inventory: Validate Quantity
+    
+    alt Pass
+        Technician->>Site: Install
+        Site-->>System: Complete
+    else Fail
+        Inventory->>Planning: Flag Exception
+    end
+
+stateDiagram-v2
+    [*] --> SalesOrder: Material Request
+    SalesOrder --> SalesShipment: Picked & Packed
+    SalesShipment --> QualityCheck: Issued to Technician
+    QualityCheck --> Pass: Within Thresholds
+    QualityCheck --> Fail: Outside Thresholds
+    Pass --> Installation: Deploy
+    Fail --> Review: Exception
+    Review --> SalesOrder: Reissue
+    Installation --> [*]: Complete
