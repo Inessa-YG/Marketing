@@ -50,7 +50,3 @@ flowchart TD
     style Start fill:#dbeafe
     style O fill:#86efac
 ```
-        T->>I: Request More Materials
-        I->>T: Issue Additional Items
-    end
-```
