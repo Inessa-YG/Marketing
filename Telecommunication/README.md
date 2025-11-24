@@ -15,9 +15,9 @@
 
 
 ## 2. Key findings & impact
-- Finding 1 (one sentence + KPI)
-- Finding 2 (one sentence + KPI)
-- Recommended action & expected impact
+- Finding 1: not completed yet
+- Finding 2: not completed yet
+- Recommended action & expected impact: not completed yet
 
 
 ## 3. Skills & Tools
@@ -27,13 +27,14 @@
 - Statistical Analysis: SciPy
 - Special Techniques: Association Rule Mining (Apriori), SHAP Explainable AI
 
-
+```mermaid
 ## 4. Repo structure
 ├── telecom_inventory_analysis.ipynb  # Main analysis Notebook
 ├── data/
 │   └── telecom_data.xlsx             # Raw data
 ├── images/                           # Images for README
 └── README.md                         # Project documentation
+```
 
 
 ## 5. How to run (reproducibility)
