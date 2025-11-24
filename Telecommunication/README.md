@@ -5,10 +5,13 @@
 ## 1. Business Context & Objective
 - Background: This project is based on hundreds of thousands of inventory transaction records from a telecommunications equipment installation company. The company faces challenges such as project delivery delays and inventory cost control. 
 - Objective: provide data-driven decision support for the company's operational efficiency and cost control through in-depth data analysis and machine learning modeling.
-- Challenges:
-  1.Delivery Delays: What factors cause installation work to not be completed before the customer's expected date?
-  2.Cost Control: How to predict and control inventory transaction costs?
-  3.Demand Forecasting: How to more accurately predict product demand and optimize inventory management?
+- Challenges & Pain Points:
+  1.Workforce Shortage: Recruitment difficulties&Field technician shortage&Aging workforce&Wage stagnation&Skills gap&Lack of standardization
+  2.Network Quality & Reliability: Major outages&Workforce cuts impacting service&Customer expectations.
+  3.Permitting & Regulatory Delays
+  4.Delivery Delays: What factors cause installation work to not be completed before the customer's expected date?
+  5.Cost Control: How to predict and control inventory transaction costs?
+  6.Demand Forecasting: How to more accurately predict product demand and optimize inventory management?
 
 
 ## 2. Key findings & impact
