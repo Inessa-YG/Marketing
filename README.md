@@ -1,25 +1,26 @@
-# 📊 Marketing Portfolio
+# 📊 Project Portfolio
 
-Welcome to my **Marketing** repository!  
-This space showcases my projects, including images, videos, and creative stuff that combine data-driven insights with real-world marketing applications.
+Welcome to my **Projects** repository!  
+This space showcases my projects, including mindmaps, thoughts, and creative stuff that combine data-driven insights with real-world applications.
 
 ---
 
 ## 🎯 About This Repository
-This repository highlights my work and learning journey in **Digital Marketing**.  
+This repository highlights my work and learning journey in **Business Analytics**.  
 It includes:
-- **image**
-- **video**
-- **audio**
+- **Industry Research**
+- **Data Relationships**
+- **Processing Path**
+- **Solutions**
+- **Advice&Suggestion**
+- **Images**
+- **Videos**
 
 ---
-## Original Works
-- **my first original video:** (https://b23.tv/ttrHa3R)
 
 ## 🧠 Tools & Skills Used
-- **premiere pro**
-- **audio**
 - **Soft Skills**: Communication, Critical Thinking, Storytelling  
+- **Python | SQL | PowerBI |**
 
 ---
 
@@ -32,4 +33,4 @@ If you’d like to connect or collaborate, feel free to reach out:
 
 ---
 
-✨ *Thank you for visiting my Marketing repository!*
+✨ *Thank you for visiting my repository!*
