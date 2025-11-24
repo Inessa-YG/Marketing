@@ -17,7 +17,6 @@
 ## 2. Key findings & impact
 - Finding 1: not completed yet
 - Finding 2: not completed yet
-- Recommended action & expected impact: not completed yet
 
 
 ## 3. Skills & Tools
@@ -27,21 +26,16 @@
 - Statistical Analysis: SciPy
 - Special Techniques: Association Rule Mining (Apriori), SHAP Explainable AI
 
-```mermaid
 ## 4. Repo structure
 ├── telecom_inventory_analysis.ipynb  # Main analysis Notebook
 ├── data/
 │   └── telecom_data.xlsx             # Raw data
 ├── images/                           # Images for README
 └── README.md                         # Project documentation
-```
 
 
 ## 5. How to run (reproducibility)
 1. Clone repo
-2. Create venv: `python -m venv venv && source venv/bin/activate`
-3. `pip install -r requirements.txt`
-4. Run `python src/etl.py` then open `notebooks/`
 
 
 ## 6. Data
@@ -51,16 +45,15 @@
 
 
 ## 7. Analysis summary
-High-level summary + short list of important code cells and SQL queries (link to files)
+(link to files)
 
 
 ## 8. Dashboard
-Small embedded images of dashboards + link to interactive version (if hosted)
+Small embedded images of dashboards + link to interactive version
 
 
 ## 9. Business recommendations
-Actionable list: who should do what, expected lift, risks, further work
-
-
-## 10. About me & contact
-Short bio + link to resume + link to GitHub Pages personal site
+Actionable list:
+- 
+-
+-
