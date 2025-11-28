@@ -1,13 +1,17 @@
 ## New Food Manufacturing
 ```mermaid
-flowchart TD
-    A[Isolate Animal Stem Cell] --> B[Screen & Select<br/>High-Performing Cell Lines]
-    B --> C[Prepare Bioreactor<br/>(Manufacturing Hardware)]
-    C --> D[Define Growth Conditions<br/>(Feed/Nutrients, Temperature, pH)]
-    D --> E[Cell Cultivation<br/>(Proliferation into Millions–Billions)]
-    E --> F[Harvest Cell Biomass<br/>(Several kg of Fish Tissue Equivalent)]
-    F --> G[Biomass is Unstructured<br/>(Not Natural Muscle Fibers)]
-    G --> H[Food Engineering<br/>Shape Texture & Structure]
-    H --> I[Create Final Food Products]
+sequenceDiagram
+    participant Lab as Cell Lab
+    participant QA as Cell Screening
+    participant Bio as Bioreactor
+    participant Eng as Process Engineering
+    participant Prod as Product Dev
 
+    Lab->>QA: Isolate stem cells<br/>Screen for ideal cell lines
+    QA->>Bio: Select high-performing cells<br/>Transfer to bioreactor
+    Bio->>Bio: Optimise nutrients, temperature,<br/>growth environment
+    Bio->>Bio: Proliferate to millions–billions of cells
+    Bio->>Eng: Deliver harvested cell biomass
+    Eng->>Prod: Process unstructured biomass<br/>Shape texture & form
+    Prod->>Prod: Create final fish products
 ```
