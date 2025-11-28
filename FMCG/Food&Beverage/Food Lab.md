@@ -1,5 +1,15 @@
 ## New Food Manufacturing
 ```mermaid
+flowchart TD
+    A["Isolate animal stem cell"] --> B["Screen and select\nhigh-performing cell lines"]
+    B --> C["Prepare bioreactor\n(manufacturing hardware)"]
+    C --> D["Define growth conditions:\nnutrients, temperature, pH"]
+    D --> E["Cultivate cells:\nproliferation to millions–billions"]
+    E --> F["Harvest cell biomass\n(several kg of fish cells)"]
+    F --> G["Biomass is unstructured\n(not natural muscle fibers)"]
+    G --> H["Food engineering:\nshape texture and structure"]
+    H --> I["Create final fish products"]
+
 sequenceDiagram
     participant Lab as Cell Lab
     participant QA as Cell Screening
