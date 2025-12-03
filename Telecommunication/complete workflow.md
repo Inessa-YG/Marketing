@@ -39,7 +39,8 @@ flowchart TD
     
     Installation --> RecordUsage[Record Historical Usage<br/>Transaction Data captured<br/>For future forecasting]
     
-    RecordUsage --> DailyRecon[Daily Reconciliation<br/>Transaction OUT = UCGSOH reduction<br/>Verify: Sum(TransactionQty) &#61; QtyOnHand decrease]
+    RecordUsage --> DailyRecon[Daily Reconciliation<br/>Transaction OUT reduces UCGSOH<br/>Verify: Sum\(TransactionQty\) &#61; QtyOnHand decrease]
+
     
     DailyRecon --> ForecastUpdate[Update Demand Forecast<br/>Use: Transaction history<br/>Use: AvgRequestsPerWeek from Supplementary<br/>Calculate: New reorder points]
     
