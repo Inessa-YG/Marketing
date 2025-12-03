@@ -5,17 +5,25 @@
 - what are the issues this company's encountering from its data?
 - how can I help provide tactics to improve or optimize their performance by providing data analysis?
 
-# questions:
+# Questions: People, Materials, Money, Efficiency
 
-## product
+## People: technicians
+- what the number of technicians that each project needs? Is it one of the critical factors that result in delay?
+- is it possible to visualize the efficiency of each technician? if it is, how to optimize?
+- 
+## Materials: 
+### product
 - which project cost the most? which project is the most complicated one?
 - what is the average cost per project?
 - how about complete status of each project? does it have any pattern?
 
-## project
+#### inventory
+-
 
-## costs
+## Money: costs
+-
 
-## delivery
+## Efficiency: delivery
+-
 
-## inventory
+
