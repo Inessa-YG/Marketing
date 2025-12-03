@@ -3,7 +3,10 @@ stateDiagram-v2
     [*] --> DailyStart: Day Begins
     
     DailyStart --> InventorySnapshot: Create UCGSOH snapshot
-    note right of InventorySnapshot: SnapshotDateID = Today<br/>Copy yesterday's QtyOnHand
+    note right of InventorySnapshot
+        SnapshotDateID = Today
+        Copy yesterday's QtyOnHand
+    end note
     
     InventorySnapshot --> CustomerRequests: Process customer requests
     
@@ -13,24 +16,35 @@ stateDiagram-v2
     CheckStock --> InsufficientStock: If QtyOnHand < Required
     
     InsufficientStock --> OrderFromSupplier: Place order using LeadTime
-    note right of OrderFromSupplier: Supplementary: LeadTime<br/>Schedule receipt
+    note right of OrderFromSupplier
+        Supplementary: LeadTime
+        Schedule receipt
+    end note
     
     OrderFromSupplier --> AwaitDelivery: Wait LeadTime days
     
     AwaitDelivery --> ReceiveGoods: Goods arrive
     
     ReceiveGoods --> UpdateStockIn: Update UCGSOH (+)
-    note right of UpdateStockIn: QtyOnHand += OrderQty
+    note right of UpdateStockIn
+        QtyOnHand += OrderQty
+    end note
     
     UpdateStockIn --> SufficientStock
     
     SufficientStock --> IssueToTech: Issue materials
     
     IssueToTech --> UpdateStockOut: Update UCGSOH (-)
-    note right of UpdateStockOut: QtyOnHand -= TransactionQty
+    note right of UpdateStockOut
+        QtyOnHand -= TransactionQty
+    end note
     
     UpdateStockOut --> RecordTransaction: Record in Transaction Data
-    note right of RecordTransaction: TransactionCompleteDate<br/>ProcessingByWarehouseName<br/>TransactionUnitQuantity
+    note right of RecordTransaction
+        TransactionCompleteDate
+        ProcessingByWarehouseName
+        TransactionUnitQuantity
+    end note
     
     RecordTransaction --> Installation: Field installation
     
@@ -39,7 +53,10 @@ stateDiagram-v2
     DailyReview --> Reconciliation: Reconcile UCGSOH vs Transactions
     
     Reconciliation --> ForecastUpdate: Update forecasts
-    note right of ForecastUpdate: Use Transaction history<br/>Compare to AvgRequestsPerWeek
+    note right of ForecastUpdate
+        Use Transaction history
+        Compare to AvgRequestsPerWeek
+    end note
     
     ForecastUpdate --> ReorderCheck: Check reorder points
     
