@@ -41,7 +41,6 @@ flowchart TD
     
     RecordUsage --> DailyRecon["Daily Reconciliation Verify that total transaction quantity matches the reduction in QtyOnHand"]
 
-    
     DailyRecon --> ForecastUpdate[Update Demand Forecast<br/>Use: Transaction history<br/>Use: AvgRequestsPerWeek from Supplementary<br/>Calculate: New reorder points]
     
     ForecastUpdate --> ReorderReview{Any Products<br/>Below ROP?}
