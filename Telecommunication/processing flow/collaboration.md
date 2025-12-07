@@ -1,7 +1,7 @@
 ```mermaid
 graph TB
     subgraph "Real-Time Operations"
-        A[Transaction Data] -->|Consumes| B[UCGSOH QtyOnHand]
+        A[Transaction Data] -->|Consumes| B[Snapshot QtyOnHand]
         B -->|Updated by| C[Supplier Deliveries]
         C -->|Scheduled using| D[Supplementary LeadTime]
     end
