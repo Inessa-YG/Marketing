@@ -6,15 +6,15 @@ flowchart TD
 
     C[“UCGSOH Table<br>stock snapshot<br><b>555 Products”]
 
-    AB[“<b>296</b><br>YT_and_Sup_Only<br><font color=red>have transactions, have prediction, no stock）”]
+    AB[“<b>296</b><br>YT_and_Sup_Only<br><font color=red>(have transactions, have prediction, no stock)”]
 
-    AC[“<b>15</b><br>YT_and_UCG_Only<br><br>业务状态: 标准库存产品<br>（have transactions, no prediction, have stocks）”]
+    AC[“<b>15</b><br>YT_and_UCG_Only<br><br>standard stock<br>（have transactions, no prediction, have stocks）”]
 
-    A_Only[“<b>115</b><br>Only_In_YourTable<br><br>业务状态: <font color=orange>特殊物料或数据缺口<br>（仅有交易）”]
+    A_Only[“<b>115</b><br>Only_In_YourTable<br><br>status: <font color=orange>special materials or outstock<br>(only transactions)”]
 
-    C_Only[“<b>357</b><br>Only_In_UCGSOH<br><br>业务状态: <font color=red>呆滞库存风险<br>（仅有库存）”]
+    C_Only[“<b>357</b><br>Only_In_UCGSOH<br><br>status: <font color=red>stock redundancy<br>Only Stock”]
 
-    ABC[“<b>183</b><br>In_All_Three<br><br>业务状态: 核心可优化产品<br>（全链路数据完备）”]
+    ABC[“<b>183</b><br>In_All_Three<br><br>status: where could be optimized<br>completed processing”]
 
     A -->|include| AB
     A -->|include| AC
