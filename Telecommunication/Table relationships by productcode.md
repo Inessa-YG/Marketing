@@ -8,7 +8,7 @@ flowchart TD
 
     AB[“<b>296</b><br>YT_and_Sup_Only<br><br>status: <font color=red>have transactions, have prediction, no stock”]
 
-    AC[“<b>15</b><br>YT_and_UCG_Only<br><br>standard stock<br>have transactions, no prediction, have stocks”]
+    AC[“<b>15</b><br>YT_and_UCG_Only<br><br>standard stock<br><br>status: <have transactions, no prediction, have stocks”]
 
     A_Only[“<b>115</b><br>Only_In_YourTable<br><br>status: <font color=orange>special materials or outstock<br>Only transactions”]
 
