@@ -6,7 +6,7 @@ flowchart TD
 
     C[“UCGSOH Table<br>stock snapshot<br><b>555 Products”]
 
-    AB[“<b>296</b><br>YT_and_Sup_Only<br><font color=red>have transactions, have prediction, no stock”]
+    AB[“<b>296</b><br>YT_and_Sup_Only<br><br>status: <font color=red>have transactions, have prediction, no stock”]
 
     AC[“<b>15</b><br>YT_and_UCG_Only<br><br>standard stock<br>have transactions, no prediction, have stocks”]
 
