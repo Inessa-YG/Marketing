@@ -1,14 +1,14 @@
 ```mermaid
 flowchart TD
-    A[“Transaction Table<br><b>609 Product””]
+    A[“Transaction Table<br><b>609 Product”]
 
-    B[“Supplementary Table<br><b>479 Products””]
+    B[“Supplementary Table<br><b>479 Products”]
 
-    C[“UCGSOH Table<br>stock snapshot<br><b>555 Products””]
+    C[“UCGSOH Table<br>stock snapshot<br><b>555 Products”]
 
-    AB[“<b>296</b><br>YT_and_Sup_Only<br><font color=red>零库存直发模式<br>（有交易, 有预测, 无库存）”]
+    AB[“<b>296</b><br>YT_and_Sup_Only<br><font color=red>have transactions, have prediction, no stock）”]
 
-    AC[“<b>15</b><br>YT_and_UCG_Only<br><br>业务状态: 标准库存产品<br>（有交易, 无预测, 有库存）”]
+    AC[“<b>15</b><br>YT_and_UCG_Only<br><br>业务状态: 标准库存产品<br>（have transactions, no prediction, have stocks）”]
 
     A_Only[“<b>115</b><br>Only_In_YourTable<br><br>业务状态: <font color=orange>特殊物料或数据缺口<br>（仅有交易）”]
 
