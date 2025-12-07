@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[“Transaction Table<br>交易事实表<br><b>609种产品””]
+    A[“Transaction Table<br><b>609 kinds of product””]
 
     B[“Supplementary Table<br>补货参数表<br><b>479种产品””]
 
