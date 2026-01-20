@@ -12,7 +12,11 @@
   - Delivery Delays: What factors cause installation work to not be completed before the customer's expected date?
   - Cost Control: How to predict and control inventory transaction costs?
   - Demand Forecasting: How to more accurately predict product demand and optimize inventory management?
-
+- transaction validation rules: they check whether an order meets business constraints at the point of order entry/processing.
+  - Lowcheck: The number of units triggering a low quantity check for the transaction, anything below this number is considered a fail.
+  - Highcheck: The number of units triggering a low quantity check for the transaction, anything above this number is considered a fail.
+  - IsWithinCheck: Flag identifying whether the quantity transacted meets the minimum threshold.
+  - CheckOutcome: Descriptive indicator denoting quantity threshold pass/fail.
 
 ## 2. Key findings & impact
 - Finding 1: not completed yet
@@ -22,7 +26,7 @@
 ## 3. Skills & Tools
 - Data Processing: Pandas, NumPy
 - Visualization: Matplotlib, Seaborn, Plotly
-- Machine Learning: Scikit-learn, XGBoost
+- Machine Learning: Scikit-learn, XGBoost, LSTM, TS, ARIMA
 - Statistical Analysis: SciPy
 - Special Techniques: Association Rule Mining (Apriori), SHAP Explainable AI
 
