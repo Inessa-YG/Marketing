@@ -20,7 +20,7 @@ It includes:
 
 ## 🧠 Tools & Skills Used
 - **Soft Skills**: Communication, Critical Thinking, Storytelling  
-- **Python | SQL | PowerBI |**
+- **Python | SQL | PowerBI | EXCEL | SAS | R |**
 
 ---
 
